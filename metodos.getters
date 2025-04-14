@@ -36,6 +36,13 @@ public class Filial {
 
 public class Main {
 public Static void Main(String[] args) {
-    
+
+  Telefone telefone = new Telefone(numero: "1234");
+
+  telefone.exibirInformacoes();
+
+  telefone.setNumero(1234);
+
+  telefone.exibirInformacoes();
 }
 }
