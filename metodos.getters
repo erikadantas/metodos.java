@@ -31,7 +31,33 @@ public String toString() {
 
 public class Filial {
     private String nome;
-    
+    private Gerente gerente;
+    private List<Telefone> telefones;
+
+    public Filial(String nome, Gerente gerente, List<Telefone> telefones) {
+        this.nome = nome;
+        this.gerente = gerente;
+        this.telefones = telefones;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public Gerente getGerente() {
+        return gerente;
+    }
+
+    public List<Telefone> getTelefones() {
+        return telefones;
+    }
+
+    @Override
+    public String toString() {
+        return "Filial: " + nome + "\n" +
+               gerente + "\n" +
+               "Telefones: " + telefones;
+    }
 }
 
 public class Main {
